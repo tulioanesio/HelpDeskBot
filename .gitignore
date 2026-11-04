@@ -1,0 +1,17 @@
+# Ambiente virtual e configurações locais
+.venv/
+venv/
+.env
+.env.*
+
+# Arquivos gerados pelo Python e ferramentas de teste
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Arquivos locais do sistema operacional
+.DS_Store
+Thumbs.db
+
