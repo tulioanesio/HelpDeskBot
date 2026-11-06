@@ -58,5 +58,65 @@
     "intent": "acesso",
     "question": "Acesso negado ao abrir uma pasta compartilhada",
     "answer": "Peça ao responsável pela pasta que confirme a necessidade de acesso e encaminhe a solicitação ao suporte de TI simulado. Não altere permissões por conta própria nem utilize credenciais de terceiros."
+  },
+  {
+    "intent": "rede",
+    "question": "Meu notebook não conecta ao Wi-Fi",
+    "answer": "Verifique se o Wi-Fi está ativado, se o modo avião está desativado e se a rede correta foi selecionada. Tente reconectar pelas configurações comuns. Se persistir, procure o suporte de TI simulado, sem compartilhar a senha da rede."
+  },
+  {
+    "intent": "rede",
+    "question": "Não consigo conectar o computador à rede sem fio",
+    "answer": "Verifique se o Wi-Fi está ativado, se o modo avião está desativado e se a rede correta foi selecionada. Tente reconectar pelas configurações comuns. Se persistir, procure o suporte de TI simulado, sem compartilhar a senha da rede."
+  },
+  {
+    "intent": "rede",
+    "question": "Estou conectado ao Wi-Fi mas sem internet",
+    "answer": "Teste mais de um site e observe se outro dispositivo autorizado também está sem navegação. Informe ao suporte de TI simulado se a falha é geral ou apenas do seu dispositivo. Não altere configurações avançadas de rede."
+  },
+  {
+    "intent": "rede",
+    "question": "A rede sem fio conecta mas não consigo navegar",
+    "answer": "Teste mais de um site e observe se outro dispositivo autorizado também está sem navegação. Informe ao suporte de TI simulado se a falha é geral ou apenas do seu dispositivo. Não altere configurações avançadas de rede."
+  },
+  {
+    "intent": "rede",
+    "question": "A conexão com a internet cai toda hora",
+    "answer": "Observe a frequência das quedas e se elas afetam outros dispositivos. Se estiver usando Wi-Fi, confira a intensidade do sinal. Relate essas observações ao suporte de TI simulado; não reinicie equipamentos de rede compartilhados."
+  },
+  {
+    "intent": "rede",
+    "question": "Minha internet fica desconectando e voltando",
+    "answer": "Observe a frequência das quedas e se elas afetam outros dispositivos. Se estiver usando Wi-Fi, confira a intensidade do sinal. Relate essas observações ao suporte de TI simulado; não reinicie equipamentos de rede compartilhados."
+  },
+  {
+    "intent": "rede",
+    "question": "A internet está lenta para carregar sites",
+    "answer": "Pause downloads e transmissões desnecessários, se puder, e compare a navegação em mais de um site. Se continuar lenta, informe os serviços afetados e os horários aproximados ao suporte de TI simulado."
+  },
+  {
+    "intent": "rede",
+    "question": "A navegação na rede está muito devagar",
+    "answer": "Pause downloads e transmissões desnecessários, se puder, e compare a navegação em mais de um site. Se continuar lenta, informe os serviços afetados e os horários aproximados ao suporte de TI simulado."
+  },
+  {
+    "intent": "rede",
+    "question": "O cabo de rede está conectado mas estou sem conexão",
+    "answer": "Confira apenas se o cabo de rede externo está bem encaixado nas extremidades acessíveis, sem forçar conectores. Não mexa em switches ou equipamentos de infraestrutura. Se persistir, solicite suporte de TI simulado."
+  },
+  {
+    "intent": "rede",
+    "question": "Meu computador não acessa a rede pelo cabo Ethernet",
+    "answer": "Confira apenas se o cabo de rede externo está bem encaixado nas extremidades acessíveis, sem forçar conectores. Não mexa em switches ou equipamentos de infraestrutura. Se persistir, solicite suporte de TI simulado."
+  },
+  {
+    "intent": "rede",
+    "question": "Um site não abre mas os outros funcionam",
+    "answer": "Confirme que outros sites abrem e observe a mensagem de erro da página afetada. Informe ao suporte de TI simulado o nome do serviço e uma descrição sem dados pessoais. Não desative proteções do navegador nem tente burlar bloqueios."
+  },
+  {
+    "intent": "rede",
+    "question": "Só uma página da internet está indisponível",
+    "answer": "Confirme que outros sites abrem e observe a mensagem de erro da página afetada. Informe ao suporte de TI simulado o nome do serviço e uma descrição sem dados pessoais. Não desative proteções do navegador nem tente burlar bloqueios."
   }
 ]
