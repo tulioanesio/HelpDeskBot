@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "intent": "acesso",
+    "question": "Esqueci a senha de acesso ao computador",
+    "answer": "No cenário fictício do HelpDeskBot, use a opção de recuperação de senha, se disponível, ou solicite redefinição ao suporte de TI simulado. Não compartilhe senhas nem use a conta de outra pessoa. Nenhuma alteração foi realizada pelo chatbot."
+  },
+  {
+    "intent": "acesso",
+    "question": "Não lembro minha senha para fazer login",
+    "answer": "No cenário fictício do HelpDeskBot, use a opção de recuperação de senha, se disponível, ou solicite redefinição ao suporte de TI simulado. Não compartilhe senhas nem use a conta de outra pessoa. Nenhuma alteração foi realizada pelo chatbot."
+  },
+  {
+    "intent": "acesso",
+    "question": "Minha conta está bloqueada após tentativas de login",
+    "answer": "Pare de repetir tentativas de login. Solicite ao suporte de TI simulado a verificação do bloqueio e o procedimento autorizado de desbloqueio. Não tente contornar a restrição nem compartilhe credenciais."
+  },
+  {
+    "intent": "acesso",
+    "question": "Bloqueei meu usuário tentando entrar com a senha errada",
+    "answer": "Pare de repetir tentativas de login. Solicite ao suporte de TI simulado a verificação do bloqueio e o procedimento autorizado de desbloqueio. Não tente contornar a restrição nem compartilhe credenciais."
+  },
+  {
+    "intent": "acesso",
+    "question": "Minha senha expirou e preciso trocar",
+    "answer": "Use a opção de troca de senha da tela de acesso, caso esteja disponível no ambiente fictício. Se não conseguir concluir, procure o suporte de TI simulado. Não envie a senha antiga ou a nova ao chatbot."
+  },
+  {
+    "intent": "acesso",
+    "question": "O sistema pede para alterar a senha vencida",
+    "answer": "Use a opção de troca de senha da tela de acesso, caso esteja disponível no ambiente fictício. Se não conseguir concluir, procure o suporte de TI simulado. Não envie a senha antiga ou a nova ao chatbot."
+  },
+  {
+    "intent": "acesso",
+    "question": "O login informa senha incorreta mesmo digitando certo",
+    "answer": "Confira o Caps Lock, o idioma do teclado e a grafia do usuário, sem digitar a senha em campos visíveis. Se o erro persistir, procure o suporte de TI simulado e evite repetir tentativas que possam bloquear a conta."
+  },
+  {
+    "intent": "acesso",
+    "question": "Minha senha não é aceita na tela de acesso",
+    "answer": "Confira o Caps Lock, o idioma do teclado e a grafia do usuário, sem digitar a senha em campos visíveis. Se o erro persistir, procure o suporte de TI simulado e evite repetir tentativas que possam bloquear a conta."
+  },
+  {
+    "intent": "acesso",
+    "question": "Perdi o celular da autenticação em duas etapas",
+    "answer": "Procure o suporte de TI simulado para recuperar o segundo fator pelo procedimento autorizado do cenário fictício. Não tente burlar a autenticação e não compartilhe códigos de verificação ou recuperação."
+  },
+  {
+    "intent": "acesso",
+    "question": "Não tenho acesso ao telefone que recebe o código de verificação",
+    "answer": "Procure o suporte de TI simulado para recuperar o segundo fator pelo procedimento autorizado do cenário fictício. Não tente burlar a autenticação e não compartilhe códigos de verificação ou recuperação."
+  },
+  {
+    "intent": "acesso",
+    "question": "Não tenho permissão para acessar uma pasta de trabalho",
+    "answer": "Peça ao responsável pela pasta que confirme a necessidade de acesso e encaminhe a solicitação ao suporte de TI simulado. Não altere permissões por conta própria nem utilize credenciais de terceiros."
+  },
+  {
+    "intent": "acesso",
+    "question": "Acesso negado ao abrir uma pasta compartilhada",
+    "answer": "Peça ao responsável pela pasta que confirme a necessidade de acesso e encaminhe a solicitação ao suporte de TI simulado. Não altere permissões por conta própria nem utilize credenciais de terceiros."
+  }
+]
