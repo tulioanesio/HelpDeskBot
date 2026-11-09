@@ -118,5 +118,65 @@
     "intent": "rede",
     "question": "Só uma página da internet está indisponível",
     "answer": "Confirme que outros sites abrem e observe a mensagem de erro da página afetada. Informe ao suporte de TI simulado o nome do serviço e uma descrição sem dados pessoais. Não desative proteções do navegador nem tente burlar bloqueios."
+  },
+  {
+    "intent": "hardware",
+    "question": "O computador não liga ao apertar o botão",
+    "answer": "Confira visualmente a conexão do cabo de energia externo e se o filtro de linha está ligado, sem tocar em fios danificados ou abrir o equipamento. Se houver cheiro de queimado, faíscas ou danos, pare de usar. Solicite avaliação do suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "Meu PC não dá sinal de energia",
+    "answer": "Confira visualmente a conexão do cabo de energia externo e se o filtro de linha está ligado, sem tocar em fios danificados ou abrir o equipamento. Se houver cheiro de queimado, faíscas ou danos, pare de usar. Solicite avaliação do suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "O monitor está sem imagem com o computador ligado",
+    "answer": "Confira se o monitor está ligado, se o cabo de vídeo externo está encaixado e se a entrada de vídeo correta está selecionada. Não abra o monitor. Se continuar sem imagem, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "A tela do monitor fica preta e não exibe nada",
+    "answer": "Confira se o monitor está ligado, se o cabo de vídeo externo está encaixado e se a entrada de vídeo correta está selecionada. Não abra o monitor. Se continuar sem imagem, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "Meu computador está lento para abrir programas",
+    "answer": "Salve seu trabalho e feche aplicativos desnecessários. Se possível, reinicie normalmente o computador. Se a lentidão continuar, relate quais programas são afetados ao suporte de TI simulado; não instale ferramentas de limpeza desconhecidas."
+  },
+  {
+    "intent": "hardware",
+    "question": "O PC demora muito para executar os aplicativos",
+    "answer": "Salve seu trabalho e feche aplicativos desnecessários. Se possível, reinicie normalmente o computador. Se a lentidão continuar, relate quais programas são afetados ao suporte de TI simulado; não instale ferramentas de limpeza desconhecidas."
+  },
+  {
+    "intent": "hardware",
+    "question": "O teclado parou de digitar",
+    "answer": "Confira a conexão externa do teclado ou a carga, se for sem fio. Teste em um campo de texto sem informações sensíveis. Não force conectores nem desmonte o dispositivo; se continuar sem resposta, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "As teclas do teclado não respondem",
+    "answer": "Confira a conexão externa do teclado ou a carga, se for sem fio. Teste em um campo de texto sem informações sensíveis. Não force conectores nem desmonte o dispositivo; se continuar sem resposta, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "O mouse não move o ponteiro",
+    "answer": "Confira a conexão externa do mouse e, se for sem fio, a alimentação e o receptor. Experimente uma superfície adequada. Se o ponteiro continuar parado, solicite suporte de TI simulado, sem desmontar o dispositivo."
+  },
+  {
+    "intent": "hardware",
+    "question": "O cursor fica parado quando mexo o mouse",
+    "answer": "Confira a conexão externa do mouse e, se for sem fio, a alimentação e o receptor. Experimente uma superfície adequada. Se o ponteiro continuar parado, solicite suporte de TI simulado, sem desmontar o dispositivo."
+  },
+  {
+    "intent": "hardware",
+    "question": "O notebook está esquentando muito",
+    "answer": "Use uma superfície firme que deixe as saídas de ar livres e encerre tarefas pesadas quando possível. Se houver calor excessivo, cheiro estranho ou desligamentos, pare de usar e procure o suporte de TI simulado. Não abra o equipamento nem a bateria."
+  },
+  {
+    "intent": "hardware",
+    "question": "Meu laptop fica quente demais durante o uso",
+    "answer": "Use uma superfície firme que deixe as saídas de ar livres e encerre tarefas pesadas quando possível. Se houver calor excessivo, cheiro estranho ou desligamentos, pare de usar e procure o suporte de TI simulado. Não abra o equipamento nem a bateria."
   }
 ]
