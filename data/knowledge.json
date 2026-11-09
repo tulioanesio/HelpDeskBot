@@ -178,5 +178,65 @@
     "intent": "hardware",
     "question": "Meu laptop fica quente demais durante o uso",
     "answer": "Use uma superfície firme que deixe as saídas de ar livres e encerre tarefas pesadas quando possível. Se houver calor excessivo, cheiro estranho ou desligamentos, pare de usar e procure o suporte de TI simulado. Não abra o equipamento nem a bateria."
+  },
+  {
+    "intent": "impressora",
+    "question": "A impressora aparece offline",
+    "answer": "Confira se a impressora está ligada e se a conexão externa USB ou de rede está disponível. Verifique se selecionou o equipamento correto. Se continuar offline, procure o suporte de TI simulado sem alterar configurações administrativas."
+  },
+  {
+    "intent": "impressora",
+    "question": "Minha impressora está desconectada e indisponível",
+    "answer": "Confira se a impressora está ligada e se a conexão externa USB ou de rede está disponível. Verifique se selecionou o equipamento correto. Se continuar offline, procure o suporte de TI simulado sem alterar configurações administrativas."
+  },
+  {
+    "intent": "impressora",
+    "question": "A fila de impressão está travada",
+    "answer": "Observe se há um aviso de erro na impressora e trabalhos pendentes na fila. Cancele apenas seus próprios trabalhos, quando permitido. Se a fila continuar travada, peça auxílio ao suporte de TI simulado e evite reenviar o mesmo documento repetidamente."
+  },
+  {
+    "intent": "impressora",
+    "question": "Os documentos ficam pendentes na fila da impressora",
+    "answer": "Observe se há um aviso de erro na impressora e trabalhos pendentes na fila. Cancele apenas seus próprios trabalhos, quando permitido. Se a fila continuar travada, peça auxílio ao suporte de TI simulado e evite reenviar o mesmo documento repetidamente."
+  },
+  {
+    "intent": "impressora",
+    "question": "A impressora está sem papel na bandeja",
+    "answer": "Confira o aviso de falta de papel e reponha papel compatível na bandeja acessível, conforme as indicações externas do equipamento e a autorização do cenário fictício. Se o aviso permanecer, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "impressora",
+    "question": "Acabou o papel para imprimir",
+    "answer": "Confira o aviso de falta de papel e reponha papel compatível na bandeja acessível, conforme as indicações externas do equipamento e a autorização do cenário fictício. Se o aviso permanecer, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "impressora",
+    "question": "O papel ficou preso na impressora",
+    "answer": "Interrompa o envio de impressões e observe o aviso no painel. Não puxe papel à força, não abra compartimentos internos nem toque em áreas quentes. Solicite ao suporte de TI simulado a remoção segura do papel preso."
+  },
+  {
+    "intent": "impressora",
+    "question": "Uma folha enroscou e a impressora mostra atolamento",
+    "answer": "Interrompa o envio de impressões e observe o aviso no painel. Não puxe papel à força, não abra compartimentos internos nem toque em áreas quentes. Solicite ao suporte de TI simulado a remoção segura do papel preso."
+  },
+  {
+    "intent": "impressora",
+    "question": "A impressora avisa que o toner acabou",
+    "answer": "Confira o aviso de tinta ou toner no painel e solicite reposição ao responsável pelo equipamento no suporte de TI simulado. Não abra cartuchos nem substitua consumíveis sem autorização e orientação."
+  },
+  {
+    "intent": "impressora",
+    "question": "Preciso trocar o cartucho de tinta da impressora",
+    "answer": "Confira o aviso de tinta ou toner no painel e solicite reposição ao responsável pelo equipamento no suporte de TI simulado. Não abra cartuchos nem substitua consumíveis sem autorização e orientação."
+  },
+  {
+    "intent": "impressora",
+    "question": "A impressão sai cortada nas bordas",
+    "answer": "Confira na visualização de impressão o tamanho do papel, a orientação, as margens e a opção de ajustar à página. Se o conteúdo continuar cortado, procure o suporte de TI simulado sem enviar documentos confidenciais."
+  },
+  {
+    "intent": "impressora",
+    "question": "O documento impresso não cabe inteiro na página",
+    "answer": "Confira na visualização de impressão o tamanho do papel, a orientação, as margens e a opção de ajustar à página. Se o conteúdo continuar cortado, procure o suporte de TI simulado sem enviar documentos confidenciais."
   }
 ]
