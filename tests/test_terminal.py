@@ -1,5 +1,3 @@
-"""Testes de integração do terminal com uma base temporária sintética."""
-
 import io
 import json
 from pathlib import Path

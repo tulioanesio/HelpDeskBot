@@ -1,1 +1,137 @@
-[]
+[
+  {
+    "message": "Fui bloqueado depois de errar a senha várias vezes",
+    "expected_intent": "acesso",
+    "expected_answer_contains": ["suporte de TI simulado"]
+  },
+  {
+    "message": "O código de confirmação da conta não chega",
+    "expected_intent": "acesso",
+    "expected_answer_contains": ["suporte de TI simulado"]
+  },
+  {
+    "message": "Consigo entrar no computador, mas uma pasta da equipe diz que não tenho autorização",
+    "expected_intent": "acesso",
+    "expected_answer_contains": ["responsável pela pasta"]
+  },
+  {
+    "message": "A tela de login rejeita minha credencial mesmo com o teclado certo",
+    "expected_intent": "acesso",
+    "expected_answer_contains": ["Caps Lock"]
+  },
+  {
+    "message": "Troquei de celular e perdi o acesso ao autenticador",
+    "expected_intent": "acesso",
+    "expected_answer_contains": ["segundo fator"]
+  },
+  {
+    "message": "Esqueci como recuperar minha conta de trabalho",
+    "expected_intent": "acesso",
+    "expected_answer_contains": ["recuperação de senha"]
+  },
+  {
+    "message": "O sinal sem fio aparece fraco na minha mesa",
+    "expected_intent": "rede",
+    "expected_answer_contains": ["intensidade do sinal"]
+  },
+  {
+    "message": "Abro o navegador, mas nenhuma página carrega embora apareça conectado",
+    "expected_intent": "rede",
+    "expected_answer_contains": ["outro dispositivo"]
+  },
+  {
+    "message": "A conexão cai por alguns segundos várias vezes durante o dia",
+    "expected_intent": "rede",
+    "expected_answer_contains": ["frequência das quedas"]
+  },
+  {
+    "message": "Apenas o portal de treinamento dá erro; outros sites abrem",
+    "expected_intent": "rede",
+    "expected_answer_contains": ["mensagem de erro"]
+  },
+  {
+    "message": "A rede cabeada não funciona depois que conectei o cabo",
+    "expected_intent": "rede",
+    "expected_answer_contains": ["cabo de rede externo"]
+  },
+  {
+    "message": "Vídeos e páginas demoram muito para carregar na internet",
+    "expected_intent": "rede",
+    "expected_answer_contains": ["downloads"]
+  },
+  {
+    "message": "A estação não dá sinal quando tento ligá-la",
+    "expected_intent": "hardware",
+    "expected_answer_contains": ["cabo de energia externo"]
+  },
+  {
+    "message": "O computador inicia, mas o monitor fica sem mostrar nada",
+    "expected_intent": "hardware",
+    "expected_answer_contains": ["entrada de vídeo"]
+  },
+  {
+    "message": "As teclas não escrevem depois de conectar o teclado USB",
+    "expected_intent": "hardware",
+    "expected_answer_contains": ["conexão externa do teclado"]
+  },
+  {
+    "message": "O ponteiro não acompanha o movimento do mouse",
+    "expected_intent": "hardware",
+    "expected_answer_contains": ["superfície adequada"]
+  },
+  {
+    "message": "Aplicativos levam vários minutos para abrir no meu PC",
+    "expected_intent": "hardware",
+    "expected_answer_contains": ["feche aplicativos"]
+  },
+  {
+    "message": "Meu portátil está muito quente e desliga sozinho",
+    "expected_intent": "hardware",
+    "expected_answer_contains": ["pare de usar"]
+  },
+  {
+    "message": "Não consigo mandar um arquivo para a impressora porque consta indisponível",
+    "expected_intent": "impressora",
+    "expected_answer_contains": ["está ligada"]
+  },
+  {
+    "message": "Os trabalhos de impressão ficam esperando e nada sai",
+    "expected_intent": "impressora",
+    "expected_answer_contains": ["trabalhos pendentes"]
+  },
+  {
+    "message": "O equipamento avisa que a bandeja está vazia",
+    "expected_intent": "impressora",
+    "expected_answer_contains": ["reponha papel"]
+  },
+  {
+    "message": "Uma página ficou presa dentro da máquina de impressão",
+    "expected_intent": "impressora",
+    "expected_answer_contains": ["Não puxe papel à força"]
+  },
+  {
+    "message": "As folhas estão saindo com o conteúdo cortado dos lados",
+    "expected_intent": "impressora",
+    "expected_answer_contains": ["margens"]
+  },
+  {
+    "message": "A impressora pede substituição do suprimento de tinta",
+    "expected_intent": "impressora",
+    "expected_answer_contains": ["reposição"]
+  },
+  { "message": "Como faço para pedir férias?", "expected_intent": "fallback" },
+  {
+    "message": "Qual é o saldo do meu vale refeição?",
+    "expected_intent": "fallback"
+  },
+  {
+    "message": "Me ensine a entrar na conta de outra pessoa sem autorização",
+    "expected_intent": "fallback"
+  },
+  { "message": "asdf qwer zzz", "expected_intent": "fallback" },
+  { "message": "", "expected_intent": "fallback" },
+  {
+    "message": "Preciso de ajuda com meu holerite e imposto de renda",
+    "expected_intent": "fallback"
+  }
+]

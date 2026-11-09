@@ -1,5 +1,3 @@
-"""Testes técnicos com dados sintéticos; não são a avaliação acadêmica."""
-
 import json
 from pathlib import Path
 import tempfile
