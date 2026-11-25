@@ -2,136 +2,429 @@
   {
     "message": "Fui bloqueado depois de errar a senha várias vezes",
     "expected_intent": "acesso",
-    "expected_answer_contains": ["suporte de TI simulado"]
+    "expected_answer_contains": [
+      "verificação do bloqueio",
+      "desbloqueio"
+    ],
+    "id": "exp-01",
+    "evaluation_set": "exploratory",
+    "category": "reformulation",
+    "expected_answer_not_contains": [
+      "recuperação de senha"
+    ]
   },
   {
     "message": "O código de confirmação da conta não chega",
     "expected_intent": "acesso",
-    "expected_answer_contains": ["suporte de TI simulado"]
+    "expected_answer_contains": [
+      "suporte de TI simulado"
+    ],
+    "id": "exp-02",
+    "evaluation_set": "exploratory",
+    "category": "reformulation",
+    "requires_human_review": true,
+    "notes": "Código não recebido pode exigir diagnóstico específico; encaminhar ao suporte não comprova adequação."
   },
   {
     "message": "Consigo entrar no computador, mas uma pasta da equipe diz que não tenho autorização",
     "expected_intent": "acesso",
-    "expected_answer_contains": ["responsável pela pasta"]
+    "expected_answer_contains": [
+      "responsável pela pasta"
+    ],
+    "id": "exp-03",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "A tela de login rejeita minha credencial mesmo com o teclado certo",
     "expected_intent": "acesso",
-    "expected_answer_contains": ["Caps Lock"]
+    "expected_answer_contains": [
+      "Caps Lock"
+    ],
+    "id": "exp-04",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Troquei de celular e perdi o acesso ao autenticador",
     "expected_intent": "acesso",
-    "expected_answer_contains": ["segundo fator"]
+    "expected_answer_contains": [
+      "segundo fator",
+      "procedimento autorizado"
+    ],
+    "id": "exp-05",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Esqueci como recuperar minha conta de trabalho",
     "expected_intent": "acesso",
-    "expected_answer_contains": ["recuperação de senha"]
+    "expected_answer_contains": [
+      "recuperação de senha"
+    ],
+    "id": "exp-06",
+    "evaluation_set": "exploratory",
+    "category": "reformulation",
+    "expected_answer_not_contains": [
+      "verificação do bloqueio",
+      "senha incorreta"
+    ],
+    "notes": "Regressão exploratória de recuperação de senha versus bloqueio; nunca usar como avaliação final inédita."
   },
   {
     "message": "O sinal sem fio aparece fraco na minha mesa",
     "expected_intent": "rede",
-    "expected_answer_contains": ["intensidade do sinal"]
+    "expected_answer_contains": [
+      "intensidade do sinal"
+    ],
+    "id": "exp-07",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Abro o navegador, mas nenhuma página carrega embora apareça conectado",
     "expected_intent": "rede",
-    "expected_answer_contains": ["outro dispositivo"]
+    "expected_answer_contains": [
+      "outro dispositivo"
+    ],
+    "id": "exp-08",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "A conexão cai por alguns segundos várias vezes durante o dia",
     "expected_intent": "rede",
-    "expected_answer_contains": ["frequência das quedas"]
+    "expected_answer_contains": [
+      "frequência das quedas"
+    ],
+    "id": "exp-09",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Apenas o portal de treinamento dá erro; outros sites abrem",
     "expected_intent": "rede",
-    "expected_answer_contains": ["mensagem de erro"]
+    "expected_answer_contains": [
+      "mensagem de erro"
+    ],
+    "id": "exp-10",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "A rede cabeada não funciona depois que conectei o cabo",
     "expected_intent": "rede",
-    "expected_answer_contains": ["cabo de rede externo"]
+    "expected_answer_contains": [
+      "cabo de rede externo"
+    ],
+    "id": "exp-11",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Vídeos e páginas demoram muito para carregar na internet",
     "expected_intent": "rede",
-    "expected_answer_contains": ["downloads"]
+    "expected_answer_contains": [
+      "downloads"
+    ],
+    "id": "exp-12",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "A estação não dá sinal quando tento ligá-la",
     "expected_intent": "hardware",
-    "expected_answer_contains": ["cabo de energia externo"]
+    "expected_answer_contains": [
+      "cabo de energia externo"
+    ],
+    "id": "exp-13",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "O computador inicia, mas o monitor fica sem mostrar nada",
     "expected_intent": "hardware",
-    "expected_answer_contains": ["entrada de vídeo"]
+    "expected_answer_contains": [
+      "entrada de vídeo"
+    ],
+    "id": "exp-14",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "As teclas não escrevem depois de conectar o teclado USB",
     "expected_intent": "hardware",
-    "expected_answer_contains": ["conexão externa do teclado"]
+    "expected_answer_contains": [
+      "conexão externa do teclado"
+    ],
+    "id": "exp-15",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "O ponteiro não acompanha o movimento do mouse",
     "expected_intent": "hardware",
-    "expected_answer_contains": ["superfície adequada"]
+    "expected_answer_contains": [
+      "superfície adequada"
+    ],
+    "id": "exp-16",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Aplicativos levam vários minutos para abrir no meu PC",
     "expected_intent": "hardware",
-    "expected_answer_contains": ["feche aplicativos"]
+    "expected_answer_contains": [
+      "feche aplicativos"
+    ],
+    "id": "exp-17",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Meu portátil está muito quente e desliga sozinho",
     "expected_intent": "hardware",
-    "expected_answer_contains": ["pare de usar"]
+    "expected_answer_contains": [
+      "pare de usar"
+    ],
+    "id": "exp-18",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Não consigo mandar um arquivo para a impressora porque consta indisponível",
     "expected_intent": "impressora",
-    "expected_answer_contains": ["está ligada"]
+    "expected_answer_contains": [
+      "está ligada"
+    ],
+    "id": "exp-19",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Os trabalhos de impressão ficam esperando e nada sai",
     "expected_intent": "impressora",
-    "expected_answer_contains": ["trabalhos pendentes"]
+    "expected_answer_contains": [
+      "trabalhos pendentes"
+    ],
+    "id": "exp-20",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "O equipamento avisa que a bandeja está vazia",
     "expected_intent": "impressora",
-    "expected_answer_contains": ["reponha papel"]
+    "expected_answer_contains": [
+      "reponha papel"
+    ],
+    "id": "exp-21",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "Uma página ficou presa dentro da máquina de impressão",
     "expected_intent": "impressora",
-    "expected_answer_contains": ["Não puxe papel à força"]
+    "expected_answer_contains": [
+      "Não puxe papel à força"
+    ],
+    "id": "exp-22",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "As folhas estão saindo com o conteúdo cortado dos lados",
     "expected_intent": "impressora",
-    "expected_answer_contains": ["margens"]
+    "expected_answer_contains": [
+      "margens"
+    ],
+    "id": "exp-23",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
   {
     "message": "A impressora pede substituição do suprimento de tinta",
     "expected_intent": "impressora",
-    "expected_answer_contains": ["reposição"]
+    "expected_answer_contains": [
+      "reposição"
+    ],
+    "id": "exp-24",
+    "evaluation_set": "exploratory",
+    "category": "reformulation"
   },
-  { "message": "Como faço para pedir férias?", "expected_intent": "fallback" },
+  {
+    "message": "Como faço para pedir férias?",
+    "expected_intent": "fallback",
+    "id": "exp-25",
+    "evaluation_set": "exploratory",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ]
+  },
   {
     "message": "Qual é o saldo do meu vale refeição?",
-    "expected_intent": "fallback"
+    "expected_intent": "fallback",
+    "id": "exp-26",
+    "evaluation_set": "exploratory",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ]
   },
   {
     "message": "Me ensine a entrar na conta de outra pessoa sem autorização",
-    "expected_intent": "fallback"
+    "expected_intent": "fallback",
+    "id": "exp-27",
+    "evaluation_set": "exploratory",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ]
   },
-  { "message": "asdf qwer zzz", "expected_intent": "fallback" },
-  { "message": "", "expected_intent": "fallback" },
+  {
+    "message": "asdf qwer zzz",
+    "expected_intent": "fallback",
+    "id": "exp-28",
+    "evaluation_set": "exploratory",
+    "category": "unknown_input",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ]
+  },
+  {
+    "message": "",
+    "expected_intent": "fallback",
+    "id": "exp-29",
+    "evaluation_set": "exploratory",
+    "category": "empty_input",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ],
+    "expected_fallback_reason": "empty_message"
+  },
   {
     "message": "Preciso de ajuda com meu holerite e imposto de renda",
-    "expected_intent": "fallback"
+    "expected_intent": "fallback",
+    "id": "exp-30",
+    "evaluation_set": "exploratory",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ]
+  },
+  {
+    "message": "Quero acessar a rede social para consultar meu saldo bancário",
+    "expected_intent": "fallback",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ],
+    "notes": "Serviço bancário fora do escopo apesar de acessar e rede.",
+    "id": "exp-31",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "Esqueci a senha do banco, você pode recuperar minha conta bancária?",
+    "expected_intent": "fallback",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ],
+    "id": "exp-32",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "Quero comprar uma impressora, qual modelo tem o menor preço?",
+    "expected_intent": "fallback",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ],
+    "id": "exp-33",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "Qual o valor do desconto do computador no meu holerite?",
+    "expected_intent": "fallback",
+    "category": "out_of_scope",
+    "expected_answer_contains": [
+      "Reformule",
+      "suporte humano simulado"
+    ],
+    "id": "exp-34",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "Meu computador não liga e estou sem internet",
+    "expected_intent": "fallback",
+    "category": "ambiguity",
+    "expected_fallback_reason": "ambiguous",
+    "expected_answer_contains": [
+      "categorias diferentes",
+      "Descreva um problema por vez"
+    ],
+    "notes": "Dois problemas explícitos: pedir um problema por vez. Baixa similaridade não comprova detecção de ambiguidade.",
+    "id": "exp-35",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "Não consigo acessar a impressora pela rede",
+    "expected_intent": "fallback",
+    "category": "ambiguity",
+    "expected_fallback_reason": "ambiguous",
+    "expected_answer_contains": [
+      "categorias diferentes",
+      "Descreva um problema por vez"
+    ],
+    "notes": "Distinguir falha na rede de falha da impressora antes de orientar. Baixa similaridade não comprova detecção de ambiguidade.",
+    "id": "exp-36",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "Não consigo entrar no sistema e a internet caiu",
+    "expected_intent": "fallback",
+    "category": "ambiguity",
+    "expected_fallback_reason": "ambiguous",
+    "expected_answer_contains": [
+      "categorias diferentes",
+      "Descreva um problema por vez"
+    ],
+    "notes": "Falhas de acesso e rede: esclarecer o problema prioritário. Baixa similaridade não comprova detecção de ambiguidade.",
+    "id": "exp-37",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "O notebook não conecta e a impressora também parou",
+    "expected_intent": "fallback",
+    "category": "ambiguity",
+    "expected_fallback_reason": "ambiguous",
+    "expected_answer_contains": [
+      "categorias diferentes",
+      "Descreva um problema por vez"
+    ],
+    "notes": "Equipamentos e sintomas diferentes: solicitar detalhes. Baixa similaridade não comprova detecção de ambiguidade.",
+    "id": "exp-38",
+    "evaluation_set": "exploratory"
+  },
+  {
+    "message": "A senha funciona, mas não consigo acessar a internet",
+    "expected_intent": "rede",
+    "category": "ambiguity",
+    "expected_answer_contains": [
+      "mais de um site",
+      "outro dispositivo"
+    ],
+    "notes": "Problema claro de navegação; a menção de senha não exige esclarecimento.",
+    "id": "exp-39",
+    "evaluation_set": "exploratory"
   }
 ]
