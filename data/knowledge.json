@@ -238,5 +238,100 @@
     "intent": "impressora",
     "question": "O documento impresso não cabe inteiro na página",
     "answer": "Confira na visualização de impressão o tamanho do papel, a orientação, as margens e a opção de ajustar à página. Se o conteúdo continuar cortado, procure o suporte de TI simulado sem enviar documentos confidenciais."
+  },
+  {
+    "intent": "acesso",
+    "question": "Como recuperar o acesso à minha conta de trabalho se esqueci a senha?",
+    "answer": "No cenário fictício do HelpDeskBot, use a opção de recuperação de senha, se disponível, ou solicite redefinição ao suporte de TI simulado. Não compartilhe senhas nem use a conta de outra pessoa. Nenhuma alteração foi realizada pelo chatbot."
+  },
+  {
+    "intent": "acesso",
+    "question": "Preciso recuperar minha senha de login corporativo",
+    "answer": "No cenário fictício do HelpDeskBot, use a opção de recuperação de senha, se disponível, ou solicite redefinição ao suporte de TI simulado. Não compartilhe senhas nem use a conta de outra pessoa. Nenhuma alteração foi realizada pelo chatbot."
+  },
+  {
+    "intent": "acesso",
+    "question": "Meu usuário foi bloqueado por várias tentativas com senha errada",
+    "answer": "Pare de repetir tentativas de login. Solicite ao suporte de TI simulado a verificação do bloqueio e o procedimento autorizado de desbloqueio. Não tente contornar a restrição nem compartilhe credenciais."
+  },
+  {
+    "intent": "acesso",
+    "question": "Errei a senha repetidamente e agora a conta está bloqueada",
+    "answer": "Pare de repetir tentativas de login. Solicite ao suporte de TI simulado a verificação do bloqueio e o procedimento autorizado de desbloqueio. Não tente contornar a restrição nem compartilhe credenciais."
+  },
+  {
+    "intent": "acesso",
+    "question": "A tela de login não aceita minha credencial, mesmo com o teclado configurado",
+    "answer": "Confira o Caps Lock, o idioma do teclado e a grafia do usuário, sem digitar a senha em campos visíveis. Se o erro persistir, procure o suporte de TI simulado e evite repetir tentativas que possam bloquear a conta."
+  },
+  {
+    "intent": "acesso",
+    "question": "Mudei de celular e não consigo usar o aplicativo autenticador",
+    "answer": "Procure o suporte de TI simulado para recuperar o segundo fator pelo procedimento autorizado do cenário fictício. Não tente burlar a autenticação e não compartilhe códigos de verificação ou recuperação."
+  },
+  {
+    "intent": "acesso",
+    "question": "Perdi o acesso ao autenticador de segundo fator",
+    "answer": "Procure o suporte de TI simulado para recuperar o segundo fator pelo procedimento autorizado do cenário fictício. Não tente burlar a autenticação e não compartilhe códigos de verificação ou recuperação."
+  },
+  {
+    "intent": "rede",
+    "question": "O navegador está conectado, mas não carrega nenhuma página da internet",
+    "answer": "Teste mais de um site e observe se outro dispositivo autorizado também está sem navegação. Informe ao suporte de TI simulado se a falha é geral ou apenas do seu dispositivo. Não altere configurações avançadas de rede."
+  },
+  {
+    "intent": "rede",
+    "question": "A conexão de internet sofre quedas frequentes durante o dia",
+    "answer": "Observe a frequência das quedas e se elas afetam outros dispositivos. Se estiver usando Wi-Fi, confira a intensidade do sinal. Relate essas observações ao suporte de TI simulado; não reinicie equipamentos de rede compartilhados."
+  },
+  {
+    "intent": "rede",
+    "question": "A conexão cabeada falhou após conectar o cabo Ethernet",
+    "answer": "Confira apenas se o cabo de rede externo está bem encaixado nas extremidades acessíveis, sem forçar conectores. Não mexa em switches ou equipamentos de infraestrutura. Se persistir, solicite suporte de TI simulado."
+  },
+  {
+    "intent": "rede",
+    "question": "O portal corporativo apresenta erro, mas os demais sites funcionam",
+    "answer": "Confirme que outros sites abrem e observe a mensagem de erro da página afetada. Informe ao suporte de TI simulado o nome do serviço e uma descrição sem dados pessoais. Não desative proteções do navegador nem tente burlar bloqueios."
+  },
+  {
+    "intent": "hardware",
+    "question": "A estação de trabalho não liga e não apresenta sinal de energia",
+    "answer": "Confira visualmente a conexão do cabo de energia externo e se o filtro de linha está ligado, sem tocar em fios danificados ou abrir o equipamento. Se houver cheiro de queimado, faíscas ou danos, pare de usar. Solicite avaliação do suporte de TI simulado."
+  },
+  {
+    "intent": "hardware",
+    "question": "Meu portátil esquenta demais e desliga por superaquecimento",
+    "answer": "Use uma superfície firme que deixe as saídas de ar livres e encerre tarefas pesadas quando possível. Se houver calor excessivo, cheiro estranho ou desligamentos, pare de usar e procure o suporte de TI simulado. Não abra o equipamento nem a bateria."
+  },
+  {
+    "intent": "impressora",
+    "question": "Não consigo imprimir porque a impressora aparece indisponível",
+    "answer": "Confira se a impressora está ligada e se a conexão externa USB ou de rede está disponível. Verifique se selecionou o equipamento correto. Se continuar offline, procure o suporte de TI simulado sem alterar configurações administrativas."
+  },
+  {
+    "intent": "impressora",
+    "question": "Os trabalhos de impressão estão na fila, mas os documentos não saem",
+    "answer": "Observe se há um aviso de erro na impressora e trabalhos pendentes na fila. Cancele apenas seus próprios trabalhos, quando permitido. Se a fila continuar travada, peça auxílio ao suporte de TI simulado e evite reenviar o mesmo documento repetidamente."
+  },
+  {
+    "intent": "impressora",
+    "question": "A impressora indica que a bandeja de papel está vazia",
+    "answer": "Confira o aviso de falta de papel e reponha papel compatível na bandeja acessível, conforme as indicações externas do equipamento e a autorização do cenário fictício. Se o aviso permanecer, procure o suporte de TI simulado."
+  },
+  {
+    "intent": "impressora",
+    "question": "Uma página de papel ficou presa na máquina de impressão",
+    "answer": "Interrompa o envio de impressões e observe o aviso no painel. Não puxe papel à força, não abra compartimentos internos nem toque em áreas quentes. Solicite ao suporte de TI simulado a remoção segura do papel preso."
+  },
+  {
+    "intent": "impressora",
+    "question": "As folhas impressas saem cortadas nas laterais",
+    "answer": "Confira na visualização de impressão o tamanho do papel, a orientação, as margens e a opção de ajustar à página. Se o conteúdo continuar cortado, procure o suporte de TI simulado sem enviar documentos confidenciais."
+  },
+  {
+    "intent": "acesso",
+    "question": "O código de confirmação de login não chega ao meu telefone",
+    "answer": "Confira se o telefone cadastrado está disponível e tem sinal e se o código foi enviado ao canal esperado, sem informar o número ao chatbot. Se não receber o código, procure o suporte de TI simulado para verificar o segundo fator pelo procedimento autorizado. Não compartilhe códigos nem tente contornar a autenticação."
   }
 ]
