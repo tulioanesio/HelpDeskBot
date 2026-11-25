@@ -4,6 +4,8 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+import numpy as np
+
 from chatbot.engine import AMBIGUOUS_ANSWER, ChatbotEngine
 
 
@@ -35,6 +37,7 @@ class EngineTests(unittest.TestCase):
                 self.assertEqual(result["answer"], entry["answer"])
                 self.assertEqual(result["matched_question"], entry["question"])
                 self.assertAlmostEqual(result["similarity"], 1.0)
+                self.assertIsNone(result["fallback_reason"])
 
     def test_normalization(self):
         result = ChatbotEngine(self.path).respond("CONEXAO INSTAVEL!")
@@ -48,6 +51,8 @@ class EngineTests(unittest.TestCase):
                 self.assertEqual(result["intent"], "fallback")
                 self.assertEqual(result["similarity"], 0.0)
                 self.assertIsNone(result["matched_question"])
+                self.assertEqual(result["fallback_reason"],
+                                 "empty_message" if not message.strip() else "low_similarity")
 
     def test_low_similarity_preserves_metadata(self):
         result = ChatbotEngine(self.path, threshold=0.99).respond("senha")
@@ -55,20 +60,59 @@ class EngineTests(unittest.TestCase):
         self.assertGreater(result["similarity"], 0)
         self.assertLess(result["similarity"], 0.99)
         self.assertEqual(result["matched_question"], BASE[0]["question"])
+        self.assertEqual(result["fallback_reason"], "low_similarity")
 
     def test_ambiguity_between_intents(self):
         result = ChatbotEngine(self.path).respond("Monitor apagado papel preso")
         self.assertEqual(result["intent"], "fallback")
         self.assertEqual(result["answer"], AMBIGUOUS_ANSWER)
+        self.assertEqual(result["fallback_reason"], "ambiguous")
+        self.assertGreaterEqual(result["similarity"], 0.35)
+        self.assertIsNotNone(result["matched_question"])
+
+    def test_threshold_and_margin_control_abstention_reason(self):
+        scenarios = [
+            (0.34, 0.33, "low_similarity"),
+            (0.35, 0.34, None),
+            (0.40, 0.38, "ambiguous"),
+            (0.50, 0.38, None),
+        ]
+        engine = ChatbotEngine(self.path)
+        for best, competitor, reason in scenarios:
+            with self.subTest(best=best, competitor=competitor):
+                scores = np.array([[best, 0.0, competitor, 0.0, 0.0]])
+                with patch("chatbot.engine.cosine_similarity", return_value=scores):
+                    result = engine.respond("senha")
+                self.assertEqual(result["fallback_reason"], reason)
+                self.assertEqual(result["intent"], "fallback" if reason else "acesso")
+
+    def test_evaluator_consumes_actual_engine_fallback_reasons(self):
+        from tests.evaluate import evaluate
+
+        cases = [
+            {"message": " ", "expected_intent": "fallback",
+             "expected_fallback_reason": "empty_message"},
+            {"message": "xyzqv", "expected_intent": "fallback",
+             "expected_fallback_reason": "low_similarity"},
+            {"message": "Monitor apagado papel preso", "expected_intent": "fallback",
+             "expected_fallback_reason": "ambiguous"},
+        ]
+        for row in evaluate(cases, ChatbotEngine(self.path)):
+            with self.subTest(message=row["case"]["message"]):
+                self.assertTrue(row["intent_ok"])
+                self.assertTrue(row["fallback_reason_ok"])
 
     def test_same_intent_tie_is_not_ambiguous(self):
         self.write_base([BASE[0], dict(BASE[0])])
-        self.assertEqual(ChatbotEngine(self.path).respond("Esqueci minha senha")["intent"], "acesso")
+        result = ChatbotEngine(self.path).respond("Esqueci minha senha")
+        self.assertEqual(result["intent"], "acesso")
+        self.assertIsNone(result["fallback_reason"])
 
     def test_different_intent_checked_beyond_second_question(self):
         self.write_base([BASE[2], dict(BASE[2]), {**BASE[2], "intent": "hardware"}])
         result = ChatbotEngine(self.path).respond(BASE[2]["question"])
         self.assertEqual(result["answer"], AMBIGUOUS_ANSWER)
+        self.assertEqual(result["fallback_reason"], "ambiguous")
 
     def test_does_not_refit_during_conversation(self):
         engine = ChatbotEngine(self.path)
