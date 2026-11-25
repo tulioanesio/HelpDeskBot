@@ -25,7 +25,7 @@ O HelpDeskBot simula o atendimento a colaboradores de uma empresa fictícia. Ele
 | `hardware` | Computador sem energia, monitor, teclado, mouse, lentidão e superaquecimento |
 | `impressora` | Impressora offline, fila, papel, atolamento, toner e configuração de impressão |
 
-A base atual contém **48 perguntas de referência**, distribuídas igualmente entre as quatro intenções. Os dados e procedimentos são **fictícios**, elaborados para representar situações de suporte técnico inicial.
+A base atual contém **67 perguntas de referência**: 20 de acesso, 16 de rede, 14 de hardware e 17 de impressora. Os dados e procedimentos são **fictícios**, elaborados para representar situações de suporte técnico inicial.
 
 **Fora do escopo:** RH, financeiro, notícias, suporte bancário, acesso não autorizado, diagnóstico definitivo, ações administrativas e reparos perigosos. O chatbot não garante resposta correta para toda reformulação; o desempenho deve ser avaliado com mensagens independentes da base.
 
