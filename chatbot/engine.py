@@ -69,8 +69,10 @@ class ChatbotEngine:
         result = {
             "intent": "fallback", "answer": FALLBACK_ANSWER,
             "similarity": 0.0, "matched_question": None,
+            "fallback_reason": "low_similarity",
         }
         if not message.strip():
+            result["fallback_reason"] = "empty_message"
             return result
         vector = self.vectorizer.transform([message])
         if vector.nnz == 0:
@@ -90,6 +92,7 @@ class ChatbotEngine:
         if (competing_score > 0 and competing_score >= self.threshold
                 and score - competing_score <= self.ambiguity_margin):
             result["answer"] = AMBIGUOUS_ANSWER
+            result["fallback_reason"] = "ambiguous"
             return result
-        result.update(intent=best["intent"], answer=best["answer"])
+        result.update(intent=best["intent"], answer=best["answer"], fallback_reason=None)
         return result
