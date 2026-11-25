@@ -148,7 +148,7 @@ Os arquivos `tests/test_engine.py` e `tests/test_terminal.py` verificam comporta
 
 ### Avaliação de qualidade das respostas
 
-`tests/cases.json` contém casos independentes para as quatro intenções e situações fora do escopo. `tests/evaluate.py` executa a base de avaliação com o mesmo motor do terminal e imprime, para cada entrada, intenção esperada e obtida, resposta, similaridade e veredito. Também resume acurácia de intenção, taxa de fallback, adequação por critérios textuais, resultados por intenção e confusões observadas. Critérios textuais são verificações simples e não substituem revisão humana da resposta.
+`tests/cases.json` contém **39 casos exploratórios**, incluindo reformulações para as quatro intenções, situações fora do escopo com vocabulário de TI e cinco cenários de ambiguidade. Estes casos já foram inspecionados e não constituem uma avaliação final inédita. `tests/evaluate.py` executa os casos com o mesmo motor do terminal e imprime intenção, resposta, similaridade e veredito. Também resume acurácia de intenção, taxa de fallback, adequação por critérios textuais, resultados por intenção e confusões observadas.
 
 Execute com:
 
@@ -156,7 +156,6 @@ Execute com:
 python -m tests.evaluate
 ```
 
-Os casos que falharem são listados para investigação. Registre no relatório acadêmico os erros realmente observados, suas causas prováveis e melhorias; não trate os resultados de uma rodada como desempenho universal nem ajuste os casos finais para favorecer o sistema.
 
 ## Estrutura do projeto
 
