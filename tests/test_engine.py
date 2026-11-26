@@ -102,6 +102,35 @@ class EngineTests(unittest.TestCase):
                 self.assertTrue(row["intent_ok"])
                 self.assertTrue(row["fallback_reason_ok"])
 
+    def test_configured_threshold_changes_acceptance(self):
+        scores = np.array([[0.38, 0.0, 0.20, 0.0, 0.0]])
+        for threshold in (0.30, 0.35, 0.40, 0.45):
+            with self.subTest(threshold=threshold):
+                engine = ChatbotEngine(self.path, threshold=threshold)
+                with patch("chatbot.engine.cosine_similarity", return_value=scores):
+                    result = engine.respond("senha")
+                if threshold in (0.30, 0.35):
+                    self.assertEqual(result["intent"], "acesso")
+                    self.assertIsNone(result["fallback_reason"])
+                else:
+                    self.assertEqual(result["intent"], "fallback")
+                    self.assertEqual(result["fallback_reason"], "low_similarity")
+
+    def test_configured_margin_changes_clarification(self):
+        scores = np.array([[0.50, 0.0, 0.46, 0.0, 0.0]])
+        for margin in (0.03, 0.05, 0.08):
+            with self.subTest(margin=margin):
+                engine = ChatbotEngine(self.path, ambiguity_margin=margin)
+                with patch("chatbot.engine.cosine_similarity", return_value=scores):
+                    result = engine.respond("senha")
+                if margin == 0.03:
+                    self.assertEqual(result["intent"], "acesso")
+                    self.assertIsNone(result["fallback_reason"])
+                else:
+                    self.assertEqual(result["intent"], "fallback")
+                    self.assertEqual(result["fallback_reason"], "ambiguous")
+                    self.assertEqual(result["answer"], AMBIGUOUS_ANSWER)
+
     def test_same_intent_tie_is_not_ambiguous(self):
         self.write_base([BASE[0], dict(BASE[0])])
         result = ChatbotEngine(self.path).respond("Esqueci minha senha")
